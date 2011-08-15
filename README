@@ -1,3 +1,25 @@
+Question:
+
+Consider the following process done on 4 digit numbers: Take any four digit number which has at least 2 different digits. (1111 is not allowed, but 1112 is) Arrange the digits first in descending order to get another 4 digit number (2111) and then in ascending order to get one more four digit number (1112). Add leading zeroes if necessary. Subtract smaller number from the larger number (eg: 2111 - 1112 = 0990) Repeat from step b
+
+Example - Starting with 1112
+
+2111 - 1112 = 0999 9990 - 0999 = 8991 9981 - 1899 = 8082 8820 - 0288 = 8532 8532 - 2358 = 6174
+
+It’s an interesting fact that this process when done on 4 digit numbers always ends up at 6174 after a few iterations. In the example above, 1112 took 5 iterations to evaluate to 6174.
+
+Write a program that performs the above operation on all valid 4 digit numbers from 1000-9998 and find out how many iterations it takes each number to evaluate to 6174.
+
+Also: print a frequency distribution table with number of iterations needed to reach 6174 as one column and the total count of numbers corresponding to that iteration as another. [Bonus marks if you can represent this as a nice looking graph.]
+
+Example Output:
+
+Iteration	Total Count of Numbers
+1	10
+2	151
+3	240
+
+
 Design:
 
 The code has three functions.
