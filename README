@@ -1,0 +1,37 @@
+Design:
+
+The code has three functions.
+difference_of_numbers(number) : It sorts the digits in the given argument 'number' in ascending
+								order, then sorts it in descending order and returns the 
+								difference between them as int.
+								
+is_valid(number) : This function checks if there is atleast two different digits in the given
+				   argument 'number'.
+				   
+get_count(number) : This function returns the number of iterations needed for a four digit number
+					to reach 6174
+
+display_as_table(out) : This function displays the output in neatly aligned table form. If a
+						file object is given as argument then the output will be written to
+						the given file.
+
+
+Dependencies :
+
+No dependencies.
+
+
+Usage :
+
+$python invariant.py
+
+Output:
+
+Iterations  Total Count of Numbers
+     1                356          
+     2                519          
+     3                2124         
+     4                1124         
+     5                1379         
+     6                1508         
+     7                1980         
